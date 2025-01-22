@@ -21,7 +21,7 @@ Please review official [Apple Guidelines](https://developer.apple.com/documentat
 "RatingRequestApp" is a test app that includes one ViewController which has the code to trigger an App Store rating in ```viewDidAppear(_ animated:)``` method as an example.
 
 ## Invoke App Store review
-```
+```swift
         // Request app store review, with 3 months frequency.
         // this will not request another review request for 3 months
 
