@@ -7,7 +7,6 @@
 
 import UIKit
 import StoreKit
-import Resolver
 import BackbaseSecureStorage
 
 @MainActor

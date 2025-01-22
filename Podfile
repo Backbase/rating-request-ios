@@ -8,24 +8,15 @@ target 'RateAndReview' do
   use_frameworks!
 
   # Pods for RateAndReview
-  # $resolverVersion = '1.2.1'
-  # $backbaseVersion = '~> 12.0'
-  # $designSystemVersion = '~> 6.0'
+  $backbaseVersion = '~> 10.0'
 
-  pod 'Backbase'
+  pod 'Backbase', $backbaseVersion
   pod 'SwiftLint'
-#  pod 'Resolver'
-  pod 'BackbaseDesignSystem'
 
   target 'RateAndReviewTests' do
 #    inherit! :search_paths
     # Pods for testing
   end
-
-  target 'RateAndReviewUITests' do
-    # Pods for testing
-  end
-
 end
 
 post_install do |installer_representation|
