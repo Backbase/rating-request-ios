@@ -25,7 +25,7 @@ Please review official [Apple Guidelines](https://developer.apple.com/documentat
         // Request app store review, with 3 months frequency.
         // this will not request another review request for 3 months
 
-        let ratingRequestManager = RatingRequestManager.build(with: 3)
+        let ratingRequestManager = RatingRequestManager(configuration: .init(frequencyInMonths: 3))
         ratingRequestManager.requestReviewIfAppropriate()
 ```
 

@@ -18,7 +18,7 @@ public struct RatingRequestManager {
     private let secureStorageInfo: SecureStorageInfo = SecureStorageFactory.createWithMigration()
     private let storage: BackbaseSecureStorage.SecureStorage
     
-    init(configuration: Configuration) {
+    public init(configuration: Configuration) {
         self.configuration = configuration
         storage = secureStorageInfo.storage
     }

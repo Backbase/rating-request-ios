@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let ratingRequestManager = RatingRequestManager.build(with: 3)
+        let ratingRequestManager = RatingRequestManager(configuration: .init(frequencyInMonths: 3))
         ratingRequestManager.requestReviewIfAppropriate()
     }
 }

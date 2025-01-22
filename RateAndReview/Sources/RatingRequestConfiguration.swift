@@ -16,11 +16,4 @@ public extension RatingRequestManager {
             self.frequencyInMonths = frequencyInMonths
         }
     }
-    
-    /// Entry point to the RatingRequestManager
-    static func build(with frequencyInMonths: Int = 3) -> RatingRequestManager {
-        let configuration = Configuration(frequencyInMonths: frequencyInMonths)
-        
-        return RatingRequestManager(configuration: configuration)
-    }
 }
